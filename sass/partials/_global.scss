@@ -1,0 +1,47 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(-15deg, rgb(234, 150, 82) 57%, rgb(241, 183, 76) 85%);
+
+    p {
+        font-family: $font-text;
+        font-size: $base-size;
+    }
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 70% 40% 0% 0%;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(-15deg, rgb(75, 85, 175) 27%, rgb(82, 97, 234) 70%);
+    left: -80px;
+    bottom: 0;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 90% 0% 0% 0%;
+    width: 66.5%;
+    height: 700px;
+    background: linear-gradient(-15deg, rgb(75, 85, 175) 37%, rgb(82, 97, 234) 70%);
+    left: 600px;
+    bottom: 0;
+}
+
+.container {
+    width: 70%;
+    height: 98vh;
+    position: relative;
+    z-index: 7;
+}
