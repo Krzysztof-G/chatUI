@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -23,55 +24,72 @@
                 </div>
             </div>
             <div class="main__content">
-                <input type="text" placeholder="Enter the keywords"><i class="fas fa-search"></i></input>
+                <input type="text" placeholder="Enter the keywords..."><i class="fas fa-search"></i></input>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="counter"><span>2</span></div>
+                    <div class="image"><img src="https://cdn.pixabay.com/photo/2020/11/24/18/19/cat-5773481_1280.jpg"
+                            alt=""></div>
+                    <p>Amanda Rodriguez<span>2:36 PM</span></p>
+                    <p>People are wanting to fly to inter...</p>
                 </div>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="group__counter"></div>
+                    <div class="image">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png" alt="">
+                    </div>
+                    <p>Jordan Morris<span>12:36 PM</span></p>
+                    <p>Getting The Upper Hand</p>
                 </div>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="image"><img
+                            src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg" alt="">
+                    </div>
+                    <p>William McGuire<span>1:36 PM</span></p>
+                    <p>Beyond The Naked Eye</p>
                 </div>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="image"><img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg"
+                            alt=""></div>
+                    <p>Herman Delgado<span>1:08 PM</span></p>
+                    <p>Religion And Science</p>
                 </div>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="image"><img src="https://cdn.pixabay.com/photo/2020/03/30/18/03/flower-4985011__480.png"
+                            alt=""></div>
+                    <p>Dora Osborne<span>1:04 PM</span></p>
+                    <p>Sleek Hair Sedu Style</p>
                 </div>
                 <div class="main__content__user">
-                    <img src="/images/user.png" alt="">
-                    <p>Przemocny<span>9:41 PM</span></p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.....</p>
+                    <div class="image"><img src="https://cdn.pixabay.com/photo/2019/10/01/13/58/coffee-4518354__480.png"
+                            alt=""></div>
+                    <p>Luis Wheeler<span>1:01 PM</span></p>
+                    <p>A popular method of cooking chi...</p>
+                </div>
+                <div class="main__content__user">
+                    <div class="image"><img src="https://cdn.pixabay.com/photo/2020/05/20/03/50/gears-5193383__480.png"
+                            alt=""></div>
+                    <p>John Doe<span>10:00 PM</span></p>
+                    <p>Just funny guy</p>
                 </div>
             </div>
             <div class="main__footer">
                 <button>
-                    <i class="fas fa-comments"></i>
-                    <p>chat</p>
+                    <i class="fas fa-comment-dots"></i>
+                    <p>Chat</p>
                 </button>
                 <button>
                     <i class="fas fa-address-book"></i>
-                    <p>mail list</p>
+                    <p>Mail list</p>
                 </button>
                 <button>
                     <i class="fab fa-cc-discover"></i>
-                    <p>discovery</p>
+                    <p>Discovery</p>
                 </button>
                 <button>
                     <i class="fas fa-user"></i>
-                    <p>me</p>
+                    <p>Me</p>
                 </button>
+                <div class="bottom__bar"></div>
             </div>
         </div>
         <div class="message__view">
@@ -84,57 +102,102 @@
                     <button class="btn__back"><i class="fas fa-arrow-left"></i></button>
                     <p>Herman Delgado</p>
                     <button class="btn__sets"><i class="fas fa-ellipsis-v"></i></button>
-                    <div class="message__nav__users">
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                        <div class="img"><img src="/images/user.png" alt=""></div>
-                    </div>
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/11/24/18/19/cat-5773481_1280.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/03/30/18/03/flower-4985011__480.png"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2019/10/01/13/58/coffee-4518354__480.png"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/11/24/18/19/cat-5773481_1280.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_1280.png"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2020/03/30/18/03/flower-4985011__480.png"alt=""></button>
+                        </div>
+                        <div class="carousel-cell">
+                            <button><img src="https://cdn.pixabay.com/photo/2019/10/01/13/58/coffee-4518354__480.png"alt=""></button>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="message__content">
                 <section class="message__one">
                     <div class="user__one">
-                        <img src="/images/user_1.png" alt="">
-                        <p>Hello! Is there any chance....</p>
+                        <img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg" alt="">
+                        <p>Hello! Is there any chance ...</p>
                     </div>
                     <div class="sender__one">
-                        <img src="/images/user.png" alt="">
-                        <p>Emmmmm??</p>
+                        <img src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg" alt="">
+                        <p>Emmmm?</p>
                     </div>
+                    <div class="time">2:36 PM</div>
                 </section>
                 <section class="message__two">
                     <div class="user__two">
-                        <img src="/images/user_1.png" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg" alt="">
                         <p>Sorry, this is the illustration I just painted. Can you help me?</p>
                     </div>
                     <div class="sender__two">
-                        <img src="/images/user.png" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg" alt="">
                         <p>Of course! What do you want?</p>
                     </div>
                 </section>
                 <section class="message__three">
                     <div class="user_three">
-                        <img src="/images/user_1.png" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/19/13/15/moon-5190738__480.jpg" alt="">
                         <p></p>
                     </div>
                     <div class="sender__three">
-                        <img src="/images/user.png" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2020/08/14/17/13/light-bulbs-5488573__480.jpg" alt="">
+                        <div class="group__counter"></div>
                         <p>10"<i class="fas fa-microphone"></i><i class="fas fa-play"></i></p>
                     </div>
                 </section>
             </div>
             <div class="message__footer">
-                <button class="btn__mic"><i class="fas fa-microphone"></i></button>
-                <input type="text" placeholder="Type something ...">
-                <button class="btn__emojs"><i class="fas fa-laugh"></i></button>
+                <button class="btn__mic"><i class="fas fa-microphone-alt"></i></button>
+                <input type="text" placeholder="Type something...">
+                <button class="btn__emojis"><i class="fas fa-laugh"></i></button>
                 <button class="btn__others"><i class="fas fa-plus"></i></button>
+                <div class="bottom__bar"></div>
             </div>
         </div>
     </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        $('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true,
+  pageDots: false,
+  prevNextButtons: false,
+  percentPosition: false
+});
+    </script>
 </body>
 
 </html>
